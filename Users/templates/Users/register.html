@@ -1,0 +1,25 @@
+{% extends "Home/base.html" %}
+
+{% block content %}
+        <center><h1>Register</h1></center>
+        <div class="content-section">
+       		<form method="POST">
+       			{% csrf_token %}				<!-- added security, must to add otherwise form will not work -->
+       			<fieldset class="form-group">
+       				<legend class="border-bottom mb-4">	Join Today </legend>		<!-- mb is margin bottom -->
+       				{{ form.as_p }}                                             <!-- as_p is a form method that will render our form in paragraph -->
+           			</fieldset>
+       			<div class="form-group">						<!-- Submit button is not included within form -->
+       				<button class="btn btn-outline-info" type="submit" >
+       					Sign Up
+       				</button>
+       			</div>
+       			<div class="border-top pd-3">
+       				<small class="text-muted">
+       					Already have an Account ?
+       					<a href="#" class="ml-2">Log in</a>
+       				</small>
+       			</div>
+       		</form>
+       	</div>
+{% endblock content %}

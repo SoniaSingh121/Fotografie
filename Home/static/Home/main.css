@@ -1,0 +1,256 @@
+
+/* . stands for punctuation, specifies class after it 
+     styling group of classes can be done by separating them with space
+   # is used to style ids 
+     an id should always be unique with no duplicate or multiple values 
+     ids are very helpful in case of linking web pages
+*/
+
+
+
+* {
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+html, body {
+  height: 100%;
+  background-color: #1B2B2F;        /*background of page*/
+  color: #0a0a0a;                   /*color of text*/
+  margin-top: 8rem;                /*margin from top*/
+}
+
+
+ul {
+  margin: 0;
+}
+
+main {
+  height: 100%;
+}
+
+
+.bg-steel {
+  background-color: #35545D;        /* 304050 */
+}
+
+.site-header .navbar-brand {                     
+  /* text-transform: lowercase; */
+  color: #E2E2E2;
+  letter-spacing: 2px;
+  font-family: 'Indie Flower';
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #A9C5CB;
+  font-weight: 525;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #E2E2E2;
+  font-weight: 100000;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 400;
+  color: #E2E2E2;
+}
+
+.site-header .navbar-collapse .dropdown-menu {        /* styling group of classes */
+  text-align: center;
+}
+
+.site-header .navbar-nav .dropdown-menu {        /* styling group of classes */
+  background-color: #35545D;
+}
+
+.site-header .navbar-nav .dropdown-menu .dropdown-item {        /* styling group of classes */
+  color: #A9C5CB;
+}
+
+.site-header .navbar-nav .dropdown-menu .dropdown-item:hover {        /* styling group of classes */
+  background-color: #35545D;
+  color: #E2E2E2;
+}
+
+.content-section {
+  background: #FFFFFF;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #000000;
+}
+
+a.article-title:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+
+
+/* Social Icons */
+
+.social {
+ position: fixed;
+ top: 38%;
+ font-size: 43px;     
+ z-index: 1;
+} 
+
+.social li {
+  list-style-type: none;
+  margin-left: 2rem;
+
+}
+
+.social li a{
+  color: #99D3E9;
+
+}
+
+
+.social li a:hover .fa-facebook{
+  color: #3f5fa2;
+
+}
+
+.social li a:hover .fa-twitter{
+  color: #03a5d2;
+
+}
+
+.social li a:hover .fa-instagram{
+  color: #C13584;
+
+}
+
+.social li a:hover .fa-github-alt{
+  color: #010506;
+
+}
+
+.social li a:hover .fa-linkedin{
+  color: #0073b1;
+
+}
+
+/* Footer */
+
+.footer {
+  background: #111C20;
+  height: 300px;
+  position: relative;
+}
+
+
+.footer .footer-content {
+  height: 230px;
+  border: 1px; 
+}
+
+/* About & Contact */
+
+.footer .footer-content .known {
+  width: 30%;
+  height: 30px;
+  color: #0385f7;
+  margin-left: 48%;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 90px;
+  font-size: 17px;
+}
+
+.footer .footer-content .known a{
+  text-decoration: none;
+}
+
+.footer .footer-bottom {
+  background: #111A1D;
+  color: white;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px; 
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .footer-bottom .left {
+  text-align:left;
+  width: 50%;
+  margin-left: 70px;
+}
+
+.footer .footer-bottom .left a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer .footer-bottom .right {
+  text-align: right;
+  width: 50%;
+  margin-right: 70px;
+}
+
+
+
+/* About */
+
+#team {
+  background-color: #1B2B2F;
+  width: 100%;
+
+}

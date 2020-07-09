@@ -1,0 +1,39 @@
+{% extends "Home/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+			<div class="carousel-inner" role="listbox">
+				
+				<div class="carousel-item active" style="background-image: ">
+					
+					<div class="carousel-captain text-center">
+						<h1>welcome</h1>
+						<a class="btn btn-outline-light btn-lg" href="#">start</a>
+					</div>
+				</div>
+				<div class="carousel-item" >
+					<img src="{% static 'Home/media/download.jpeg' %}">
+				</div>
+				<div class="carousel-item" >
+					<img src="{% static 'Home/media/download.jpeg' %}">
+				</div>
+			</div>
+	
+{% endblock content %}
+
+
+{% block sidebar %}
+<div class="content-section">
+<h3>Our Sidebar</h3>
+	<p class='text-muted'>You can put any information here you'd like.
+	  <ul class="list-group">
+	    <li class="list-group-item list-group-item-light">Latest Posts</li>
+	    <li class="list-group-item list-group-item-light">Announcements</li>
+	    <li class="list-group-item list-group-item-light">Calendars</li>
+	    <li class="list-group-item list-group-item-light">etc</li>
+	  </ul>
+	</p>
+</div>
+{% endblock sidebar %}

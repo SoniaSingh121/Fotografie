@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'Home/main.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Annie Use Your Telescope">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Staatliches&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/197d1cb87f.js"></script>
+	<title>Fotografie</title>
+
+</head>
+
+<body>
+	<header class="site-header">
+	  <nav class="navbar navbar-expand-lg bg-steel fixed-top">
+	    <div class="container">
+	      <a class="navbar-brand mr-4" href="{% url 'home' %}">Fotografie</a>					<!-- mr-4 is for spacing -->
+	      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="true" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span> 
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbarToggle">
+	        <div class="navbar-nav mr-auto">										<!-- mr-auto is for spacing -->
+	        	<a class="nav-item nav-link" href="{% url 'home-profile' %}">Profile</a>						<!-- class="active" will show it is active -->
+	        	<div class="nav-item dropdown">
+        			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Genre</a>
+        			<div class="dropdown-menu">
+			            <a href="#" class="dropdown-item">Inbox</a>
+			            <a href="#" class="dropdown-item">Sent </a>
+			            <a href="#" class="dropdown-item">Drafts</a>
+			        </div>
+        		</div>
+	            
+	        </div>
+	        
+	        <div class="navbar-nav ">
+		        <a class="nav-item nav-link" href="#">Login</a>
+		        <a class="nav-item nav-link" href="{% url 'users_register' %}">Register</a>
+	        </div>
+	      </div>
+	    </div>
+	  </nav>
+	</header>
+
+
+	<main role="main" class="container">
+	  <div class="row">
+	    <div class="col-md-12">
+	    	{% block content %} {% endblock content %}
+	    	{% block sidebar %} {% endblock sidebar %}
+	    </div>
+	  </div>
+	</main>
+
+
+	<!-- Social Media Section -->
+
+	<div class="social">
+		<ul>
+			<li>
+				<a rel="nofollow noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https://fotografie.com" target="_blank">
+					<i class="fab fa-facebook"></i>
+					
+				</a>
+			</li>
+			<li>
+				<a rel="nofollow noopener noreferrer" href="https://twitter.com/intent/tweet?text=&url=www.fotografie.com" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a rel="nofollow noopener noreferrer" href="https://msng.link/o/?https://www.fotografie.com=ig" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a rel="nofollow noopener noreferrer" href="" target="_blank">
+					<i class="fab fa-github-alt"></i>
+				</a>
+			</li>
+			<li>
+				<a rel="nofollow noopener noreferrer" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=www.fotografie.com" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Footer Section -->
+
+	<div class="footer">
+		<div class="footer-content">
+		 	<div class="footer-section abouts"></div>						<!-- undefined sections -->
+		 	<div class="footer-section links"></div>
+		 	<div class="known">
+		 		<a class="" href="{% url 'home-about' %}">About</a> |
+		 	    <a class="" href="{% url 'home-contact' %}">Contact</a>
+		 	</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="left">
+				Made with <i class="fas fa-heart"></i> in <a href="https://www.google.com/maps/place/India/@20.0123533,64.4487244,4z/data=!3m1!4b1!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288" target="_blank">India</a>   
+				
+			</div>
+			<div class="right">
+				&copy; Fotografie, Inc
+			</div>
+		  	
+		</div>
+	</div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+
+
